@@ -7,4 +7,12 @@ A static website served by Ngnix that calls the API and rotates Fortune cookies 
 
 There is also a slack integration using the slash command.
 
-The run.sh file is self explanatory.
+The run.sh files are self explanatory.
+
+Run for API containers. From the fortune directory with four containers to work with the current Ngnix configuration
+
+```./run.sh 5000 && ./run.sh 5001 && ./run.sh 5002 && ./run.sh 5003```
+
+Run nginx from the nginx directory
+
+``` ./run.sh ```
