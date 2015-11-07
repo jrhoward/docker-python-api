@@ -10,7 +10,7 @@ ENV NGINX_VERSION 1.9.5-1~jessie
 RUN apt-get update && \
     apt-get install -y ca-certificates nginx=${NGINX_VERSION} && \
     rm -rf /var/lib/apt/lists/*
-COPY nginx_1.conf /etc/nginx/conf.d/default.conf
+COPY default.conf /etc/nginx/conf.d/default.conf
 COPY index.html /var/www/
 COPY about.html /var/www/
 COPY dist.tar.gz /var/www/resources/

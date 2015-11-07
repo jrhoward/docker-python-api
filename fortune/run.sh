@@ -7,7 +7,7 @@ useradd -r fortune
 CONTAINER_PORT=${1:-5000}
 
 #See app.py file. This is the token for integrating fortune with slack.
-TOKEN=${1:-"A_SLACK_TOKEN"}
+TOKEN=${2:-"A_SLACK_TOKEN"}
 
 #create the container name based on the port it is listening on.
 #This allows us to run multiple containers on the same box
