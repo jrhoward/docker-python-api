@@ -13,6 +13,7 @@ RUN apt-get update && \
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY index.html /var/www/
 COPY about.html /var/www/
+# The bootstrap libraries
 COPY dist.tar.gz /var/www/resources/
 RUN tar -xvzf /var/www/resources/dist.tar.gz -C /var/www/resources/ && rm -f /var/www/resources/dist.tar.gz
 
